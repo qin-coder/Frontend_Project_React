@@ -53,20 +53,54 @@
 
 ## 🚀 Features
 
-- 🧾 **Article Management**: Create, edit, delete, and list forum posts
-- 🔐 **User Authentication**: Secure login and token-based session handling
-- 🖼️ **Rich Text Editor**: Create engaging content with image and text formatting
-- 📦 **Redux Toolkit**: Modern and scalable state management
-- 🧩 **Modular Codebase**: Clearly organized for scalability and maintainability
+### 🧾 Article Management
+- Create, edit, delete, and list forum posts  
+- Rich text editing with **React Quill**  
+- Cover image upload (single, multiple, or none)  
+- Article filtering by status and channel  
+
+### 🔐 User Authentication
+- Secure login system with token management  
+- Persistent login sessions using `localStorage`  
+- Role-based access control (**admin/user**)  
+
+### 🖼️ Rich Text Editor
+- Integrated **React Quill** editor  
+- Support for text formatting, links, and media  
+- Image upload integration  
+
+### 📦 State Management
+- **Redux Toolkit** for centralized state  
+- User authentication slice (token & user info)  
+- Async actions for API calls  
+
+### 🧩 Modular Codebase
+- Clearly organized components and pages  
+- Custom hooks for reusable logic 
+- API modules for encapsulated HTTP requests  
 
 ---
 
 ## 🛠 Tech Stack
 
-- ⚛️ **Frontend**: React, Redux Toolkit, React Router
-- 🌐 **HTTP Client**: Axios
-- 🎨 **Styling**: CSS Modules / Global CSS
-- 🛠️ **Build Tooling**: CRA (Create React App) with CRACO
+### ⚛️ Frontend
+- **React 18**
+- **Redux Toolkit**
+- **React Router v6**
+- **Ant Design 5.x**
+
+### 🌐 HTTP Client
+- **Axios** with request interceptors
+
+### 🎨 Styling
+- **CSS Modules**
+- **Less** (via Ant Design)
+- **Global styles**
+
+### 🛠️ Build Tooling
+- **CRA (Create React App)** with **CRACO**
+- **Babel** for transpilation
+
 
 ---
 
@@ -74,12 +108,6 @@
 
 
 ```bash
-npm install
-
-
-📦 Getting Started
-
-
 
 # Install dependencies
 npm install
