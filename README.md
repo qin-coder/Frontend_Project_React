@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+# 🗣️ React-Forum — A Modern Forum Platform Built with React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+💬 **React Forum** is a lightweight and modular forum platform built with **React + Redux Toolkit + Axios + CRACO**, supporting rich-text publishing, user login, article management, and route-based modular layout.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Highlights
 
-### `npm start`
+🧩 **Modular Architecture** — Clear separation of components, pages, hooks, and utilities  
+📦 **State Management** — Powered by Redux Toolkit for scalable and centralized state handling  
+🔗 **Reusable API Modules** — Organized Axios-based API layers for articles and users  
+🖼️ **Rich Content Editor** — Integrated editor for publishing articles with media support  
+📱 **Responsive Layout** — Adaptive UI for desktops and mobile screens  
+⚙️ **Configurable Build** — Extended CRA via CRACO for flexible customization  
+🧪 **Developer Friendly** — Well-structured code, helpful comments, and easily extendable
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📁 Project Structure
+```bash
+📦 root
+├── 🏞️ public
+├── 💻 src
+│ ├── 🔗 apis # API calls
+│ │ ├── 📄 article # Article-related API
+│ │ └── 👤 user # User-related API
+│ ├── 🖼️ assets # Static resources (images, icons, etc.)
+│ ├── 🧩 components # Reusable UI components
+│ ├── 🪝 hooks # Custom React hooks (e.g., channel list fetch)
+│ ├── 📄 pages # Page components
+│ │ ├── 📑 Article # Article list and management
+│ │ ├── 🏠 Home # Dashboard
+│ │ ├── 🧱 Layout # Common layout (header, sidebar, content)
+│ │ ├── 🔐 Login # User login page
+│ │ └── 📝 Publish # Article creation/editing with rich-text and image upload
+│ ├── 🚦 router # Route configuration
+│ ├── 🗃️ store # Redux store setup
+│ │ └── 👤 user.js # User slice (auth & info)
+│ ├── 🎨 styles # Global styles
+│ ├── 🧰 utils # Axios instance and shared utilities
+│ ├── 🚀 App.js # Root app component
+│ └── 🧾 index.js # Entry point
+├── 📄 .gitignore # Git ignored files
+├── ⚙️ craco.config.js # CRA customization config (via CRACO)
+├── 🧭 jsconfig.json # Path alias config
+└── 📦 package.json # Project dependencies & scripts
 
-### `npm test`
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- 🧾 **Article Management**: Create, edit, delete, and list forum posts
+- 🔐 **User Authentication**: Secure login and token-based session handling
+- 🖼️ **Rich Text Editor**: Create engaging content with image and text formatting
+- 📦 **Redux Toolkit**: Modern and scalable state management
+- 🧩 **Modular Codebase**: Clearly organized for scalability and maintainability
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🛠 Tech Stack
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- ⚛️ **Frontend**: React, Redux Toolkit, React Router
+- 🌐 **HTTP Client**: Axios
+- 🎨 **Styling**: CSS Modules / Global CSS
+- 🛠️ **Build Tooling**: CRA (Create React App) with CRACO
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 📦 Getting Started
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm install
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+📦 Getting Started
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+# Install dependencies
+npm install
 
-### Making a Progressive Web App
+# Start development server
+npm run start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📌 Notes
+The API logic is modularized in src/apis/ for better maintainability.
 
-### Advanced Configuration
+craco.config.js allows you to extend or override CRA's Webpack config without ejecting.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Authentication state (token & user info) is globally managed using Redux Toolkit.
