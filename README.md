@@ -93,7 +93,7 @@
 - **Axios** with request interceptors
 
 ### 🎨 Styling
-- **CSS Modules**
+- **SCSS Modules**
 - **Less** (via Ant Design)
 - **Global styles**
 
